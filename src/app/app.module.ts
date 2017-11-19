@@ -9,9 +9,6 @@ import { GameRunModule } from './components/game-run/game-run.modules';
 // Routes
 import { APP_ROUTING } from './app.routes';
 
-// Services
-import { GameListService } from './services/game-list.service';
-
 // Components
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
@@ -27,9 +24,6 @@ import { HeaderComponent } from './components/header/header.component';
         APP_ROUTING,
         GameListModule,
         GameRunModule
-    ],
-    providers: [
-        GameListService
     ],
     bootstrap: [AppComponent]
 })

@@ -20,4 +20,8 @@ export class GameListComponent implements OnInit {
         this.gameList$ = this.gameListService.gameList;
         this.gameListService.getGameList();
     }
+
+    goToGame(id: string) {
+        this.router.navigate(['games/', id]);
+    }
 }

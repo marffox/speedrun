@@ -4,6 +4,9 @@ import { CommonModule } from '@angular/common';
 // Routes
 import { GAME_LIST_ROUTING } from './game-list.routes';
 
+// Services
+import { GameListService } from '../../services/game-list.service';
+
 // Components
 import { GameListComponent } from './game-list.component';
 
@@ -14,7 +17,10 @@ import { GameListComponent } from './game-list.component';
     ],
     declarations: [
         GameListComponent
-    ]
+    ],
+    providers: [
+        GameListService
+    ],
 })
 
 export class GameListModule {}

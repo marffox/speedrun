@@ -4,12 +4,12 @@
             <div class="row">
                 <div class="col-md-2">
                     <div class="gameList__gameCover">
-                        <img [src]="game.assets['cover-medium'].uri" alt="" [routerLink]="['/games', game.id]">
+                        <img [src]="game.assets['cover-medium'].uri" alt="" (click)="goToGame(game.id)">
                     </div>
                 </div>
                 <div class="col-md-10">
                     <div class="gameList__gameName">
-                        <span [routerLink]="['/games', game.id]">{{game.names.international}}</span>
+                        <span (click)="goToGame(game.id)">{{game.names.international}}</span>
                     </div>
                 </div>
             </div>
