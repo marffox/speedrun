@@ -1,0 +1,30 @@
+<ng-container *ngIf="gameResult && runListResult">
+    <div class="gameRun__container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="gameRun__header">
+                    <img [src]="gameResult.assets.logo.uri" alt="" class="gameRun__header-logo">
+                    <div class="gameRun__header-content">
+                        <img [src]="gameResult.assets['cover-small'].uri" alt="">
+                        <h3>{{gameResult.names.international}}</h3>
+                    </div>
+                </div>
+                <div class="gameRun__body">
+                    <div *ngIf="videoLink">
+                        <a [href]="videoLink" class="btn btn-light btn-lg" role="button" aria-pressed="true" target="_blank">
+                            Go to video
+                        </a>
+                    </div>
+                    <div *ngIf="playerName" class="playerName">
+                        <span>Player name:</span>
+                        <span>{{playerName}}</span>
+                    </div>
+                    <div *ngIf="runTime" class="playerTime">
+                        <span>Player Time:</span>
+                        <span>{{runTime}}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</ng-container>

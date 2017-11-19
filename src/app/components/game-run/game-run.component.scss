@@ -1,0 +1,55 @@
+@import '~sass/shared/variables';
+
+.gameRun {
+    &__header {
+        background-color: $color-game-header;
+        border-radius: 5px;
+        margin-bottom: 1.5rem;
+        padding: 1.5rem;
+
+        &-logo {
+            margin-bottom: 1.2rem;
+        }
+
+        &-content {
+            > * {
+                display: inline-block;
+            }
+
+            h3 {
+                margin-left: 1rem;
+            }
+        }
+    }
+
+    &__body {
+        background-color: $color-game-header;
+        border-radius: 5px;
+        padding: 1.5rem;
+
+        a {
+            cursor: pointer;
+            margin-bottom: 1rem;
+        }
+
+        .player {
+            &Time {
+                margin-bottom: 1rem;
+
+                span:first-child {
+                    font-size: 1.3rem;
+                    margin-right: 1rem;
+                }
+            }
+
+            &Name {
+                margin-bottom: 1rem;
+
+                span:first-child {
+                    font-size: 1.3rem;
+                    margin-right: 1rem;
+                }
+            }
+        }
+    }
+}
