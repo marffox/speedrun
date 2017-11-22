@@ -1,4 +1,4 @@
-# TwentyoneButtonsTest
+# SpeedRun
 
 The project has been build with the next requirements:
 Node version: 8.4.0
